@@ -1,0 +1,148 @@
+body{
+    /* background-color: gray; */
+    background-color: rgb(6, 7, 6);
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+
+}
+#navbar{
+    overflow: hidden;
+    background-color:#BE3144;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;  
+    justify-content: flex-end;  
+    padding-right: 20px;
+}
+
+#navbar ul li{
+  list-style: none;
+  margin-left: 30px;
+  height: 100%;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
+#navbar a:hover{
+    text-decoration: underline;
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #303841;
+}
+h1{
+    font-size: 2.8rem;
+    padding: 0;
+    margin: 0;
+}
+#welcome-section p{
+    color: #be3144;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    font-style:italic;
+}
+
+#projects{
+    padding-top: 30px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: #45567D;
+    margin: 0;
+    
+}
+
+#projects-tiles{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-tile{
+    width: 30%;
+    background-color: #303841;
+    margin-bottom: 30px;
+}
+.project-tile a{
+    color: #ffff;
+}
+
+.tile-image{
+    width: 100%;
+}
+
+#contacts{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #303841;
+    
+    padding: 70px 0px;
+    
+}
+.hover-tile{
+   visibility: hidden;
+}
+
+.project-tile a:hover .hover-tile{
+  visibility: visible;   
+}
+
+#contacts a{
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+#contacts a:hover{
+    margin-top: 15px;
+}
+
+#socialmedia{
+ margin: 20px;
+ display: flex;
+ flex-direction: row;
+}
+
+
+footer{
+    background-color: #303841;
+    border-top: #be3144 3px solid;
+    text-align: center;
+}
+footer p{
+    padding: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+    .project-tile{
+        width: 45%;
+    }
+  }
+  
+  
+@media only screen and (max-width: 500px) {
+    .project-tile{
+        width: 90%;
+    }
+  }
+
+
